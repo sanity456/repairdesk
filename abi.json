@@ -1,0 +1,288 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "assess_and_form_team": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "public_image",
+          "bytes"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "create_desk": {
+      "params": [
+        [
+          "desk_key",
+          "string"
+        ],
+        [
+          "service_note",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_case": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_case_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_desk": {
+      "params": [
+        [
+          "desk_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_desk_volunteer": {
+      "params": [
+        [
+          "desk_id",
+          "string"
+        ],
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_skill_names": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": [
+        {
+          "$rep": "string"
+        }
+      ]
+    },
+    "get_team_member": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_volunteer": {
+      "params": [
+        [
+          "volunteer_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "matches_team": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "expected_state",
+          "string"
+        ],
+        [
+          "expected_assessment_hash",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "open_case": {
+      "params": [
+        [
+          "case_key",
+          "string"
+        ],
+        [
+          "desk_id",
+          "string"
+        ],
+        [
+          "item_description",
+          "string"
+        ],
+        [
+          "symptoms",
+          "string"
+        ],
+        [
+          "public_image",
+          "bytes"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "register_volunteer": {
+      "params": [
+        [
+          "desk_id",
+          "string"
+        ],
+        [
+          "volunteer_key",
+          "string"
+        ],
+        [
+          "volunteer_wallet",
+          "address"
+        ],
+        [
+          "skill_mask",
+          "int"
+        ],
+        [
+          "availability_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "remove_volunteer": {
+      "params": [
+        [
+          "volunteer_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "requester_close": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "completed",
+          "bool"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "set_desk_active": {
+      "params": [
+        [
+          "desk_id",
+          "string"
+        ],
+        [
+          "active",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "set_volunteer_active": {
+      "params": [
+        [
+          "volunteer_id",
+          "string"
+        ],
+        [
+          "active",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "volunteer_response": {
+      "params": [
+        [
+          "case_id",
+          "string"
+        ],
+        [
+          "accept",
+          "bool"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

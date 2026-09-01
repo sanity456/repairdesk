@@ -1,0 +1,251 @@
+{
+  "contract": {
+    "abi_sha256": "6086e7670b1490f166a59a7a2aca3bca09e6671d2eb75e3b6f67debdc02f2b2b",
+    "address": "0x7a0C7B6515497F96df3cfF768df32c6299413863",
+    "deployed_source_sha256": "ef7ca1cf58a9c6742b77f048e3c044acee71fe9b69a131579d5a8de413777ee3",
+    "deployment_tx": "0x6179a7912087db81ac07854d632af9dba26cc6c4c6a1beb1a277ac203b607770",
+    "execution_result": "SUCCESS",
+    "schema_method_count": 17,
+    "schema_readback_exact": true,
+    "source_readback_exact": true,
+    "source_sha256": "ef7ca1cf58a9c6742b77f048e3c044acee71fe9b69a131579d5a8de413777ee3",
+    "status": "FINALIZED"
+  },
+  "correction_basis": [
+    "leader substantive payload must be independently validated and bound to every derived hash, mask, or state field",
+    "registries and fixed capacity must be owner-scoped or safely reclaimable",
+    "submission evidence must resolve to this exact deployed source and full ABI"
+  ],
+  "network": {
+    "chain_id": 61999,
+    "explorer": "https://explorer-studio.genlayer.com",
+    "name": "studionet",
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "observed": {
+    "assessment_hash_and_mask_bound": true,
+    "case": {
+      "assessment_sha256": "sha256:bf3ebfbd9d7e690e423d9fe82f06cbf0d51a932e7b67d92f511af07d53ae39d1",
+      "case_id": "0xa8221bdac70b6359179a3885fbe80f3546e33c18:CASE-1",
+      "closed_at": "",
+      "desk_id": "0x9768e147bb55116c1c0f948b9575176ab3a80f5c:COMMUNITY",
+      "desk_owner": "0x9768E147bB55116c1c0f948b9575176ab3A80F5C",
+      "image_sha256": "sha256:a149fe06a80282e8d2374ad2e99e23484c7f2343b13efac5b875b05f25876179",
+      "item_description": "A small fabric tote with a mechanical zipper and loose seam.",
+      "last_member_note": "Volunteer accepts this synthetic repair-intake appointment.",
+      "opened_at": "2026-09-01T09:25:07.585856Z",
+      "requester": "0xA8221bdAc70b6359179A3885Fbe80F3546E33C18",
+      "requester_note": "",
+      "required_mask": 5,
+      "required_skills": [
+        "MECHANICAL",
+        "TEXTILE"
+      ],
+      "roster_sha256": "sha256:18568e2eb425651a8a962b3cf7de2e57ede50a6f58499448878cf3d240252848",
+      "roster_volunteer_ids": [
+        "0x9768e147bb55116c1c0f948b9575176ab3a80f5c:COMMUNITY:0x9bf8b67e12a6b97fba6d9cf797f5b1fc0a577954:ALL"
+      ],
+      "safety_hold": false,
+      "schema": "repairdesk/case/v3",
+      "state": "TEAM_READY",
+      "symptoms": "The zipper slider moves but one seam has opened beside the closure.",
+      "uncovered_mask": 0
+    },
+    "fixture_sha256": "a149fe06a80282e8d2374ad2e99e23484c7f2343b13efac5b875b05f25876179",
+    "foreign_catalog_excluded": true,
+    "foreign_desk": {
+      "active": true,
+      "active_volunteer_count": 1,
+      "created_at": "2026-09-01T09:22:20.096499Z",
+      "desk_id": "0xe46df92d6fae5d01c67a2f5d588338d3ec813384:FOREIGN",
+      "owner": "0xe46dF92d6FAe5D01c67a2f5D588338D3Ec813384",
+      "schema": "repairdesk/desk/v3",
+      "service_note": "Foreign synthetic roster used only to prove catalog isolation.",
+      "slot_count": 1,
+      "source_reference": "foreign-desk-snapshot",
+      "source_verified": false
+    },
+    "trusted_desk": {
+      "active": true,
+      "active_volunteer_count": 1,
+      "created_at": "2026-09-01T09:23:37.690217Z",
+      "desk_id": "0x9768e147bb55116c1c0f948b9575176ab3a80f5c:COMMUNITY",
+      "owner": "0x9768E147bB55116c1c0f948b9575176ab3A80F5C",
+      "schema": "repairdesk/desk/v3",
+      "service_note": "Owner-curated public volunteer roster for scheduled repair-intake appointments.",
+      "slot_count": 1,
+      "source_reference": "trusted-desk-snapshot",
+      "source_verified": false
+    }
+  },
+  "owner": "sanity456",
+  "repository": "repairdesk",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": "genlayer-intelligent-contract-correction/v4",
+  "supersedes": {
+    "address": "0xFd238073c0DB65a0A5Dafc2bA6A45D90C9f456fb",
+    "reason": "Superseded by the full validator-binding and registry-isolation audit",
+    "source_sha256": "b5caa71511b3c8e333aeed2dda7e98cf89522f9e54e8524344eaea65c2510e83"
+  },
+  "transactions": {
+    "assess_and_form_team": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xfb2fe9b30d30acfdf2728015b2fe93b2c921ddf264a454ae1f12f634ce66ae12",
+      "status": "FINALIZED",
+      "tx_hash": "0xfb2fe9b30d30acfdf2728015b2fe93b2c921ddf264a454ae1f12f634ce66ae12",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "create_foreign_desk": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x37bd35bc3c2c744d82cd51a0335d2607d087f3af78bdebca96401cf731cb8adb",
+      "status": "FINALIZED",
+      "tx_hash": "0x37bd35bc3c2c744d82cd51a0335d2607d087f3af78bdebca96401cf731cb8adb",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "create_trusted_desk": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x685f2332ad6b267081c66e37b9fcd09894ca87040ecd95d2d3576f39282bbbec",
+      "status": "FINALIZED",
+      "tx_hash": "0x685f2332ad6b267081c66e37b9fcd09894ca87040ecd95d2d3576f39282bbbec",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "deploy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x6179a7912087db81ac07854d632af9dba26cc6c4c6a1beb1a277ac203b607770",
+      "status": "FINALIZED",
+      "tx_hash": "0x6179a7912087db81ac07854d632af9dba26cc6c4c6a1beb1a277ac203b607770",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "open_case": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x9a444c2a3ae2551dd0223f363f015c8dac2d8c12f6ee44092c3839032f95860f",
+      "status": "FINALIZED",
+      "tx_hash": "0x9a444c2a3ae2551dd0223f363f015c8dac2d8c12f6ee44092c3839032f95860f",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "register_foreign_volunteer": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x7436fd1f10760bdec0149ea6ee56d387e208109370711f0588cfe37dde9debb8",
+      "status": "FINALIZED",
+      "tx_hash": "0x7436fd1f10760bdec0149ea6ee56d387e208109370711f0588cfe37dde9debb8",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "register_trusted_volunteer": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x5a50225cfd279bea06efde61ded7a4d28232285636c730b74ffb0f53b53dc634",
+      "status": "FINALIZED",
+      "tx_hash": "0x5a50225cfd279bea06efde61ded7a4d28232285636c730b74ffb0f53b53dc634",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "volunteer_response": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xdd0e44be5f9498add55c4457905107f7bf8692684d05bd9a95c36bb2d5be3bed",
+      "status": "FINALIZED",
+      "tx_hash": "0xdd0e44be5f9498add55c4457905107f7bf8692684d05bd9a95c36bb2d5be3bed",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    }
+  },
+  "verification": {
+    "all_executions_succeeded": true,
+    "all_transactions_finalized": true,
+    "deployed_schema_exact": true,
+    "deployed_source_exact": true,
+    "latest_final_state_readback": true,
+    "leader_payload_injection_tests_passed": true,
+    "local_direct_test_count": 15,
+    "local_five_validator_test_count": 1,
+    "post_consensus_boundary_tests_passed": true,
+    "registry_isolation_tests_passed": true,
+    "synthetic_public_fixture": true
+  },
+  "verified_at": "2026-09-01T09:27:49.366542Z",
+  "wallet": {
+    "cross_repository_wallet_reused": false,
+    "external_encrypted_keystores": true,
+    "fresh_per_repository": true,
+    "other_owner_wallet_reused": false,
+    "owner": "sanity456",
+    "prior_address_overlap_count": 0,
+    "private_material_in_repository": false,
+    "repository": "repairdesk",
+    "roles": {
+      "deployer": "0x9768E147bB55116c1c0f948b9575176ab3A80F5C",
+      "role_a": "0xA8221bdAc70b6359179A3885Fbe80F3546E33C18",
+      "role_b": "0x9bf8B67e12a6B97Fba6D9CF797f5B1fC0A577954",
+      "role_c": "0xe46dF92d6FAe5D01c67a2f5D588338D3Ec813384"
+    },
+    "workspace_wallet_used": false
+  }
+}
