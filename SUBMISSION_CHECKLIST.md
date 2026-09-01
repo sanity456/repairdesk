@@ -16,4 +16,4 @@
 - [x] Full deployed schema matches abi.json exactly
 - [x] Active Studio, Explorer, transaction, and manifest evidence use `0x7a0C7B6515497F96df3cfF768df32c6299413863`
 - [x] Superseded address `0xFd238073c0DB65a0A5Dafc2bA6A45D90C9f456fb` is excluded from active submission evidence
-- [ ] After publication, replace branch-floating evidence with commit-pinned GitHub URLs
+- [x] Submission evidence is pinned to corrected release commit `43329924686a2e50b9c6a5e0d238676132866c72`

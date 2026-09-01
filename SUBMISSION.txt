@@ -1,0 +1,43 @@
+8. RepairTeamSetCover
+
+Contribution Date
+09/01/2026
+
+Title
+RepairTeamSetCover - Owner-Curated Desk Team Builder
+
+Notes / Description
+Built RepairTeamSetCover, a reusable repair-intake board where validators derive a closed skill mask and code greedily selects the smallest registration-ordered volunteer team that covers every required workstream. Its distinct GenLayer-native mechanism is multimodal skill-mask consensus -> deterministic greedy set cover -> individual volunteer acceptance. Correction applied: Skill validation now binds mask and digest to the attached canonical skill payload. Volunteer catalogs are isolated per owner-created desk with fixed reclaimable slots, cases freeze one explicitly selected desk roster, and team selection cannot scan or fall back to a foreign catalog. The full selected set was checked against both steward findings: substantive leader payloads must bind every derived digest, mask, and state field, while operational registries must be owner-scoped or safely reclaimable. No external collection. Volunteer skills, availability, descriptions, symptoms, and images are public caller declarations and are not authenticated. It does not diagnose faults, certify safety, authenticate skills, guarantee repairability, or replace in-person inspection. GenVM lint and strict typecheck pass; 15 direct tests and 1 five-validator GLSim integration test pass. A fresh repository-specific external wallet set was used, with no workspace, other-owner, or cross-repository wallet reuse. The StudioNet workflow finalized successfully in 8 transactions. The deployed source was read back byte-for-byte, the complete deployed schema matched abi.json exactly, and mechanism-specific terminal state was read back. The current release is commit 43329924686a2e50b9c6a5e0d238676132866c72; contract source: https://github.com/sanity456/repairdesk/blob/43329924686a2e50b9c6a5e0d238676132866c72/contracts/repair_team_set_cover.py. The earlier deployment is superseded, is identified only in the correction manifest, and is not submission evidence.
+
+Release commit
+43329924686a2e50b9c6a5e0d238676132866c72
+
+Evidence 1 Type
+GitHub Repository
+
+Evidence 1 URL
+https://github.com/sanity456/repairdesk
+
+Evidence 2 Type
+GitHub File
+
+Evidence 2 URL
+https://github.com/sanity456/repairdesk/blob/43329924686a2e50b9c6a5e0d238676132866c72/deployments/studionet.json
+
+Evidence 3 Type
+GenLayer Studio Contract
+
+Evidence 3 URL
+https://studio.genlayer.com/?import-contract=0x7a0C7B6515497F96df3cfF768df32c6299413863
+
+Evidence 4 Type
+GenLayer Explorer Contract
+
+Evidence 4 URL
+https://explorer-studio.genlayer.com/address/0x7a0C7B6515497F96df3cfF768df32c6299413863
+
+Evidence 5 Type
+Other
+
+Evidence 5 URL
+https://explorer-studio.genlayer.com/tx/0x6179a7912087db81ac07854d632af9dba26cc6c4c6a1beb1a277ac203b607770
